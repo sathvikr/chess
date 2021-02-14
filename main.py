@@ -8,6 +8,7 @@ import chess
 import numpy as np
 import pygame as pg
 
+from flask import Flask
 from red_chess import engine
 from red_chess.position import Position
 
@@ -27,8 +28,11 @@ ENGINE_DEPTH = 3
 BOOK = True
 FEN = ""
 
+app = Flask(__name__)
+
 
 # Creates the GUI and runs the game
+@app.route("/")
 def main():
     pg.init()
     pg.display.set_caption("Chess")
@@ -248,4 +252,5 @@ def highlight_check(screen, position):
 
 
 if __name__ == '__main__':
-    main()
+    app.debug = True
+    app.run(host="localhost", port=8080)
