@@ -1,4 +1,4 @@
-# chess
+# red_chess
 
 1. Run the program as a normal python script.
 2. In app.py, lines 254 to 257 will look like this. The program runs on the computer by default.
