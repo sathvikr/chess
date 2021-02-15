@@ -1,4 +1,8 @@
-# red_chess
+# chess
+
+This is a chess engine that plays against a user.
+
+Python 3.9 and python-chess were used in this project.
 
 1. Run the program as a normal python script.
 2. In app.py, lines 254 to 257 will look like this. The program runs on the computer by default.
