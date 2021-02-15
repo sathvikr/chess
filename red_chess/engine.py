@@ -14,7 +14,10 @@ from red_chess.search import negamax
 BOOKS = ["gm2600", "Elo2400", "DCbook_large", "final-book", "komodo", "KomodoVariety", "Performance", "codekiddy"]
 
 # Used for the endgame tablebase (change filepath for custom tablebase)
-TABLEBASE = gaviota.open_tablebase("endgames/gaviota_3/gtb")
+try:
+    TABLEBASE = gaviota.open_tablebase("endgames/gaviota_3/gtb")
+except:
+    TABLEBASE = None
 
 
 # Finds the best move in a given position at specified depth
