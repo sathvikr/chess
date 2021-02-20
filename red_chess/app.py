@@ -253,4 +253,4 @@ def highlight_check(screen, position):
 
 if __name__ == '__main__':
     app.debug = True
-    app.run(host="localhost", port=8080)
+    app.run(host="localhost", port=80)
